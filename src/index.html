@@ -1,14 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/main.scss">
     <title>Coletivo Domectivo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
+    <header class="nav">
+        <div class="nav__content">
+            <div class="nav__content--logo">
+                <img src="./images/domectivo__logo.jpg" alt="logo">
+            </div>
+            <button class="btn-mobile">
+                <span class="hamburguer"></span>
+            </button>
+            <div class="nav__content--menu">
+                <ul>
+                    <li>
+                        <button>
+                            <a href="#">HOME</a>
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <a href="#about">SOBRE</a>
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <a href="#">INGRESSOS</a>
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <a href="#">LOCALIZAÇÃO</a>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
     <section class="hero">
-        <h1 class="hero__title">Coletivo Domectivo</h1>
+        <div class="container">
+            <h1 class="hero__title">Coletivo <span class="title__span">Domectivo</span></h1>
+            <p class="hero__text">Faltam <br> <span class="hero__contador"></span> <br> para o próximo!</p>
+            <button class="hero__button">Comprar ingresso</button>
+        </div>
+        
     </section>
+    
+    <section class="sobre" id="about">
+        <div class="container" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <h2 class="sobre__title">O festival</h2>
+            <p class="sobre__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam id provident doloribus tempora? Repellendus
+                voluptates, ullam corporis non dolorum dolor inventore repudiandae quibusdam quaerat deserunt, enim eos aut
+                quia dolore nostrum explicabo accusamus. Unde nihil eaque magni eius. Eos, velit soluta. Hic libero error
+                expedita reiciendis dolores impedit vitae voluptates harum sunt consequuntur non, sint inventore veritatis
+                </p>
+        </div>
+        <div class="sobre__atracoes">
+            <h2 class="sobre__atracoes--title" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">Line-up</h2>
+            <ul class="sobre__atracoes--content">
+                <li data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
+                    <p>Groota <br>Groove</p>
+                </li>
+                <li data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
+                    <p>Irresolute</p>
+                </li>
+                <li data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
+                    <p>Eletric <br>Tufo</p>
+                </li>
+                <li data-aos="fade-left"  data-aos-offset="100" data-aos-easing="ease-in-sine">
+                    <p>The <br> Barn</p>
+                </li>
+            </ul>
+        </div>
+            
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./scripts/main.js">
+        AOS.init();
+    </script>
 </body>
+
 </html>

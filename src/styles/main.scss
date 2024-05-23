@@ -1,3 +1,20 @@
-body {
-    background-color: rgb(255, 58, 58);
+@use 'variables' as *;
+@use 'hero';
+@use 'header';
+@use 'sobre';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center; 
 }

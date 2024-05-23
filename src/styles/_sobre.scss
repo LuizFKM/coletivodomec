@@ -1,0 +1,82 @@
+@use 'variables' as *;
+
+.sobre {
+    border-top: 2px solid #ffffff4b;
+    padding-top: 32px;
+    background-color: $corDeFundo;
+    height: 100vh;
+    padding-bottom: 120px;
+    
+    &__title {
+        color: $corTextoPrincipal;
+        font-size: 3rem;
+        margin-bottom: 24px;
+    }
+    &__text {
+        font-size: 1.5rem;
+        font-family: Libre Baskerville;
+        color: $corTextoPrincipal;
+        margin-bottom: 32px;
+    }
+
+    &__atracoes {
+        box-shadow: -1px 2px 9px 3px;
+        background-color: rgb(255, 255, 255);
+        gap: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        &--title{
+            font-size: 3rem;
+            color: $corDeFundo;
+            margin-bottom: 24px;        
+        }
+        
+        &--content {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 20px;
+            line-height: 68px;
+            
+            
+            p {
+                font-family: Abril Fatface;
+                color: $corDeFundo;
+                font-size: 4.5rem;
+                margin-bottom: 24px;
+                text-align: center;
+            }
+        }
+    }
+
+    @media (max-width:640px){
+        &__title {
+            font-size: 48px;
+            text-align: center;
+        }
+
+        &__text {
+            font-size: 20px;
+        }
+
+        &__atracoes {
+            display: block;
+            height: 100vh;
+
+            &--content {
+                display: flex;
+                flex-direction: column;
+                line-height: 32px;
+                
+                p {
+                    font-size: 2rem;
+                    margin-bottom: 16px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

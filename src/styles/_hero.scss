@@ -1,0 +1,92 @@
+@use 'variables' as *;
+
+
+.hero {
+    padding-top: 120px;
+    padding-bottom: 100px;
+    background-color: $corDeFundo;
+    height: 100vh;
+
+
+        &__text {
+            font-size: 2rem;
+            font-family:Libre Baskerville;
+            color: $corTextoPrincipal;
+        }
+
+        &__title {
+            color: $corTextoPrincipal;
+            font-family: Libre Baskerville;
+            font-size: 3rem;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 24px;
+
+            .title__span {
+                font-family: Abril Fatface;
+                font-size: 6rem;
+            }
+        }
+
+        &__contador {
+            color: $corTextoPrincipal;
+            font-family: Libre Baskerville;
+            font-size: 6rem;
+            font-weight: bold;
+            white-space: nowrap;
+
+        }
+
+        &__button {
+            margin-top: 32px;
+            padding: 24px;
+            border: none;
+            border-radius: 4px;
+            background-color: darken($corDeFundo, 8%);
+            transition: 0.6s ease;
+            cursor: pointer;
+            font-size: 2rem;
+            font-family: Abril Fatface;
+            color: $corTextoPrincipal;
+
+            &:hover{
+                background-color: darken($corDeFundo, 20%);
+                transform: scale(1.1);
+            }
+        }
+
+        
+
+    @media(max-width:640px) {
+        
+        .container {
+            max-width: 100%;
+
+            .hero__title {
+                
+                font-size: 30px;
+                margin-bottom: 24px;
+    
+                .title__span {
+                font-size: 60px;
+                }
+            }
+
+            .hero__contador {
+                color: $corTextoPrincipal;
+                font-family: Libre Baskerville;
+                font-size: 32px;
+                font-weight: bold;
+                white-space: wrap;
+                
+            }
+
+        }
+
+        &__button {
+            font-size: 1.5rem;
+        }
+    }
+
+}
